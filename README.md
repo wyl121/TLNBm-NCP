@@ -1,34 +1,36 @@
 # TLNBm-NCP
-# 项目名称
+# Project Title
 
-该项目是用于训练一个神经网络模型，用于预测车辆转向角度。
+This project was used to train a neural network model for predicting vehicle steering angles.
 
-## 介绍
 
-该项目包含三个主要部分：
 
-1. 模型部分：定义了用于预测车辆转向角度的神经网络模型。
-2. 数据处理部分：用于处理输入数据，包括图像和转向角度。
-3. 训练部分：用于训练神经网络模型并评估其性能。
 
-## 文件结构
+## Introduce
 
-- `model.py`: 包含了神经网络模型的定义，包括转向角度预测模型。
-- `data_processing.py`: 包含了数据处理函数和自定义数据集类，用于加载和处理输入数据。
-- `train.py`: 包含了训练神经网络模型的代码，包括优化器的配置和训练循环的实现。
-- `README.md`: 该说明文件，提供有关项目的概述、结构和使用方法。
+The project consists of three main parts:
 
-## 使用方法
+1. modeling part: defines the neural network model for predicting the steering angle of the vehicle.
+2. Data Processing Section: Used to process the input data including images and steering angles.
+3. Training section: used to train the neural network model and evaluate its performance.
 
-1. 安装所需的依赖项：确保您已安装了项目所需的所有依赖项，可以使用以下命令安装：
+## File structure
+
+- `model.py`: contains definitions of neural network models, including steering angle prediction models.
+- `data_processing.py`: contains data processing functions and custom dataset classes for loading and processing input data.
+- `train.py`: contains the code for training the neural network model, including optimizer configuration and implementation of the training loop.
+- `README.md`: The description file, which provides an overview of the project, its structure and usage.
+## Usage
+
+1. Install required dependencies: Make sure you have installed all the dependencies required by the project, which can be installed using the following command:
 
    ```bash
    pip install -r requirements.txt
-2.配置参数：根据您的需求，在代码中配置模型的超参数和训练参数。
+2. Configure parameters: Configure the hyperparameters and training parameters of the model in your code according to your needs.
 
-3.运行训练：运行training.py文件以开始训练模型，您可以通过命令行参数指定数据路径、模型参数等。
+3. Run training: Run the training.py file to start training the model. You can specify the data path, model parameters, etc. via command line arguments.
 python train.py --data_path /path/to/data --num_epochs 10
-4.评估模型：在训练完成后，您可以使用测试数据评估模型的性能，并查看其预测结果。
-##注意事项
-本项目仅提供了基本的示例代码，您可能需要根据自己的需求进行修改和扩展。
-如果您使用了预训练的模型或其他资源，请确保遵循其许可证和使用条款。
+4. Evaluate the model: After training, you can use the test data to evaluate the performance of the model and view its prediction results.
+##Precaution
+This project only provides basic example code that you may need to modify and extend for your own needs.
+If you use pre-trained models or other resources, please make sure to follow their licenses and terms of use.
