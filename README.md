@@ -16,8 +16,8 @@ The project consists of three main parts:
 
 ## File structure
 
-- `model.py`: contains definitions of neural network models, including steering angle prediction models.
-- `data_processing.py`: contains data processing functions and custom dataset classes for loading and processing input data.
+- `TLNBm-NCP.py`: contains definitions of neural network models, including steering angle prediction models.
+- `data.py`: contains data processing functions and custom dataset classes for loading and processing input data.
 - `train.py`: contains the code for training the neural network model, including optimizer configuration and implementation of the training loop.
 - `README.md`: The description file, which provides an overview of the project, its structure and usage.
 ## Usage
