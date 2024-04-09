@@ -11,15 +11,15 @@ class SteeringAnglePredictor(nn.Module):
     def __init__(self, input_dim):
         super().__init__()
         self.input_dim = input_dim
-        self.fc1 = nn.Linear(input_dim, 64)
+        self.conv1 = nn.Conv2d(input_dim, 24, kernel_size=2)
+        self.fc1 = nn.Linear(input_dim, 32)
         self.dropout = nn.Dropout(0.25)
-        self.fc2 = nn.Linear(input dim, 32)
         self.ltc = LTC(32, wiring, batch_first=True)
     
     def forward(self, x):
+        x = F.elu(self.conv1(x))
         x = F.relu(self.fc1(x))
         x = self.dropout(x)
-        x = self.fc2(x)
         x = x.view(x.size(0), -1, 32)
         x = x.squeeze(2)
         x = x.view(x.size(0), x.size(1), x.size(2))
